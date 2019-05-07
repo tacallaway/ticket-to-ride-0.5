@@ -25,7 +25,7 @@ public class ClientCommunicator {
 
     public Object send(CommandData data) {
 
-        String response = sendAndReceive("/execute", data.command, data.value);
+        String response = sendAndReceive(data.command, data.value);
 
         Type type = new TypeToken<Map<String, Object>>(){}.getType();
         Map<String, Object> myMap = gson.fromJson(response, type);
@@ -50,9 +50,9 @@ public class ClientCommunicator {
         return con;
     }
 
-    private String sendAndReceive(String path, String command, String value) {
+    private String sendAndReceive(String command, String value) {
         try {
-            HttpURLConnection con = ClientCommunicator.SINGLETON.openConnection(path);
+            HttpURLConnection con = ClientCommunicator.SINGLETON.openConnection("/execute");
 
             DataOutputStream wr = new DataOutputStream(con.getOutputStream());
             wr.writeBytes("{\"command\": \"" + command + "\", \"value\": \"" + value + "\"}");
