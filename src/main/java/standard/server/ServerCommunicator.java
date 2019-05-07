@@ -1,4 +1,4 @@
-package server;
+package standard.server;
 
 import io.javalin.Javalin;
 

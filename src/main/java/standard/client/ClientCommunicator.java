@@ -1,4 +1,4 @@
-package client;
+package standard.client;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -95,7 +95,7 @@ public class ClientCommunicator {
 
             return response.toString();
         } catch (IOException e) {
-            throw new RuntimeException("Error calling server");
+            throw new RuntimeException("Error calling standard.server");
         }
     }
 }

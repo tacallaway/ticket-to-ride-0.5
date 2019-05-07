@@ -1,6 +1,6 @@
-package server;
+package command.server;
 
-import common.StringProcessorInterface;
+import command.common.StringProcessorInterface;
 
 public class StringProcessor implements StringProcessorInterface {
     public static StringProcessor SINGLETON = new StringProcessor();

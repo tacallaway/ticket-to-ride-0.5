@@ -1,4 +1,4 @@
-package client;
+package standard.client;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Main {
     }
 
     private static void showUsage() {
-        System.out.println("Usage: java client.Main <function> <string>");
+        System.out.println("Usage: java standard.client.MainCommand <function> <string>");
         System.out.println("Functions:");
         System.out.println("    toLowerCase - force string to lowercase");
         System.out.println("    trim - trim string");

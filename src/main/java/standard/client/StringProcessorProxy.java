@@ -1,8 +1,6 @@
-package client;
+package standard.client;
 
-import common.StringProcessorInterface;
-
-import java.io.IOException;
+import standard.common.StringProcessorInterface;
 
 public class StringProcessorProxy implements StringProcessorInterface {
 

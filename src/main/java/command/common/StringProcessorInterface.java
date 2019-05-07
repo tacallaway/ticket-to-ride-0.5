@@ -1,4 +1,4 @@
-package common;
+package command.common;
 
 public interface StringProcessorInterface {
     String toLowerCase(String string);
