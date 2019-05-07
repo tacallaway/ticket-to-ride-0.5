@@ -16,7 +16,7 @@ import java.util.Map;
 public class ClientCommunicator {
     public static ClientCommunicator SINGLETON = new ClientCommunicator();
 
-    private static final String SERVER_HOST = "http://localhost:7000";
+    private static final String SERVER_HOST = "http://localhost:7001";
     private static final String HTTP_POST = "POST";
 
     private Gson gson = new Gson();
